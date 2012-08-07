@@ -10,4 +10,4 @@ cat > kubeplayer.pot <<HEADER
 #
 # Copyright (C) 2012
 HEADER
-kdegettext.rb `find lib -iname \*.rb` >> kubeplayer.pot
+kdegettext.rb `find lib -iname \*.rb` >> $podir/kubeplayer.pot
