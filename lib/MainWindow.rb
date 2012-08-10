@@ -244,7 +244,7 @@ class MainWindow < KDE::MainWindow
       connect(video, SIGNAL('got_video_url()'), self, SLOT('request_play()'))
       video.request_video_url
     else
-      msg = KDE::i18n "The given URL <a href='%1'>%1</a> is not supported, because there is appropriate website plugin.<br />You may want to file a feature request.", kurl.url
+      msg = KDE::i18n "The given URL <a href='%1'>%1</a> is not supported, because there is no appropriate website plugin.<br />You may want to file a feature request.", kurl.url
       STDERR.puts msg
       KDE::MessageBox.messageBox nil, KDE::MessageBox::Sorry, msg, i18n("No supported URL")
     end

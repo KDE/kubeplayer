@@ -116,7 +116,7 @@ class Video < KubePlayer::Video
             if metaInfo[:reason]
               msg = KDE::i18n "<strong>Youtube reports:</strong><br/><br/> %1", metaInfo[:reason].gsub('+',' ')
             else
-              msg = KDE::i18n "It was not possible to grap an accessible video."
+              msg = KDE::i18n "It was not possible to grab an accessible video."
             end
             STDERR.puts msg
             KDE::MessageBox.messageBox(nil, KDE::MessageBox::Sorry, msg, "Youtube Video Plugin")
